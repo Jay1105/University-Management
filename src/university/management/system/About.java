@@ -10,31 +10,36 @@ public class About extends JFrame {
         setLocation(400, 150);
         getContentPane().setBackground(Color.WHITE);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/fatte.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(250, 450, Image.SCALE_DEFAULT);
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/abtt.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(300, 350, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(400, 0, 250, 450);
+        image.setBounds(350, 50, 300, 350);
         add(image);
         
-        JLabel heading = new JLabel("<html>University<br/>Management System</html>");
+        JLabel heading = new JLabel("<html>University Management System</html>");
         heading.setBounds(70, 20, 300, 130);
         heading.setFont(new Font("Tahoma", Font.BOLD, 30));
         add(heading);
         
-        JLabel name = new JLabel("<html>Developed By:<br/>Jay Chotalia<br/>Naman Chheda<br/>Chaitya Shah</html>");
-        name.setBounds(20, 30, 550, 400);
+        JLabel name = new JLabel("Developed By:");
+        name.setBounds(70, 170, 400, 30);
         name.setFont(new Font("Tahoma", Font.PLAIN, 25));
         add(name);
         
-        JLabel rollno = new JLabel("<html>SAP ID: <br/>60009210027<br/>60009210038<br/>60009210054</html>");
-        rollno.setBounds(225, 30, 550, 400);
-        rollno.setFont(new Font("Tahoma", Font.PLAIN, 25));
-        add(rollno);
+        JLabel name2 = new JLabel("Jay Chotalia");
+        name2.setBounds(70, 220, 400, 30);
+        name2.setFont(new Font("Tahoma", Font.PLAIN, 23));
+        add(name2);
         
-        JLabel contact = new JLabel("<html>Contact: <br/>jaychotalia11@gmail.com<br/>namanchheda3@gmail.com<br/>chaityashah540@gmail.com</html>");
-        contact.setBounds(70, 275, 550, 200);
-        contact.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        JLabel maill = new JLabel("jaychotalia11@gmail.com");
+        maill.setBounds(70, 260, 400, 30);
+        maill.setFont(new Font("Tahoma", Font.PLAIN, 23));
+        add(maill);
+       
+        JLabel contact = new JLabel("+91 9082154930");
+        contact.setBounds(70, 300, 400, 30);
+        contact.setFont(new Font("Tahoma", Font.PLAIN, 23));
         add(contact);
         
         setLayout(null);
