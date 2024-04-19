@@ -63,3 +63,4 @@ In this one, the overview of fee structure is provided.
 This about page provides information about the developer of this project.
 
 #### So this sums up SVKM Management System project created with Java, Swing and MySQL.
+
